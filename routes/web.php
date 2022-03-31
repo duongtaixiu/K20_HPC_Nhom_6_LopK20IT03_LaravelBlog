@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controller\PageController;
 use App\Http\Middleware\EnsureTokenIsValid;
 use App\Http\Controller\Category\CategoryController;
+use App\Http\Controller\SinhvienController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -132,6 +133,7 @@ Route::get('/tables-basic', [App\Http\Controllers\Category\AccountController::cl
 
 
 
+Route::resource('/sinhvien',[SinhvienController::class]);
 
 
 
